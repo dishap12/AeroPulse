@@ -1,0 +1,27 @@
+name: AeroPulse Data & Analytics Quality
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify official-source reconciliations and generate data bundle
+        run: python scripts/build_data.py
+      - name: Validate SQLite ETL
+        run: python scripts/build_sqlite.py
+      - name: Run analytics and UI-render tests
+        run: node --test tests/*.test.cjs
+      - name: Check generated bundle committed consistently
+        run: git diff --exit-code -- data/
+
