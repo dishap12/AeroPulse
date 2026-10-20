@@ -1,0 +1,11 @@
+{
+  "name": "aeropulse",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Offline-first Canadian airport analytics, forecasting and scenario planning",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "build:data": "python3 scripts/build_data.py",
+    "build:sqlite": "python3 scripts/build_sqlite.py"
+  }
+}
