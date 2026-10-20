@@ -23,5 +23,5 @@ jobs:
       - name: Run analytics and UI-render tests
         run: node --test tests/*.test.cjs
       - name: Check generated bundle committed consistently
-        run: git diff --exit-code -- data/
+        run: python scripts/check_generated.py
 
