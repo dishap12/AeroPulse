@@ -1,5 +1,7 @@
 # AeroPulse ✈️ — Aviation Intelligence Platform
 
+**[🌐 Open the AeroPulse live demo](https://dishap12.github.io/AeroPulse/)** · [View repository](https://github.com/dishap12/AeroPulse) · [Recruiter guide](RECRUITER_GUIDE.md)
+
 **A working, responsive aviation business intelligence portfolio application built with official Canadian airport passenger data.** Designed to demonstrate business analytics, KPI reporting, demand forecasting, data quality, and assumption-based planning relevant to airlines, airports, and aerospace manufacturers.
 
 > **Independent portfolio demonstration.** AeroPulse is not affiliated with Porter Airlines, Air Canada, Toronto Pearson, Ottawa Airport Authority, Airbus, Boeing, Bombardier or NAV CANADA. No confidential airport data are used. It is *not* a live flight tracker.
@@ -94,7 +96,7 @@ node --test tests/*.test.cjs        # tests model invariants, calculations and p
 1. Create a **public repository named `AeroPulse`** on your GitHub account.
 2. Upload the *contents of this folder* (`index.html`, `app.js`, `analytics.js`, `styles.css`, `data/`, `assets/`, `tests/`, etc.). **Do not upload only the ZIP file.**
 3. In GitHub: **Settings → Pages → Build and deployment**. Select **Deploy from a branch**; choose **main** and **/(root)**. Save.
-4. GitHub provides a site at `https://<your-username>.github.io/AeroPulse/` once Pages is enabled and built. The URL is an expected pattern, **not yet a verified live site**.
+4. AeroPulse is deployed to **[GitHub Pages](https://dishap12.github.io/AeroPulse/)**. The GitHub Pages deployment workflow completed successfully on October 20, 2026. Independently check the live site in your browser after future deployments.
 5. Add the live URL to the GitHub repo's **About → Website** field, and link GitHub + live demo from your resume/LinkedIn.
 
 Alternatively, drag the unzipped project folder to [Netlify Drop](https://app.netlify.com/drop); its static HTML works there too.
