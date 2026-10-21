@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#07111e" />
-  <meta name="description" content="AeroPulse — Canadian airport passenger intelligence, demand forecasts, and operations scenario planning. A portfolio project using official YOW and YYZ data." />
+  <meta name="description" content="AeroPulse — explore Canadian airports, aircraft specifications, airport passenger intelligence, demand forecasts, and operational scenarios. A portfolio project using official YOW and YYZ data." />
   <meta property="og:title" content="AeroPulse | Aviation Intelligence Platform" />
   <meta property="og:description" content="Real Canadian airport data. Interactive aviation insights, demand forecasting and capacity scenarios." />
   <title>AeroPulse — Aviation Intelligence</title>
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="data/airport-data.js" defer></script>
   <script src="analytics.js" defer></script>
+  <script src="atlas.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -24,6 +25,7 @@
       <div class="sidebar-overline">WORKSPACE</div>
       <nav class="main-nav">
         <button type="button" data-tab="overview" class="nav-item active"><span class="nav-ico">◈</span><span>Command Centre</span></button>
+        <button type="button" data-tab="atlas" class="nav-item"><span class="nav-ico">✈</span><span>Aviation Explorer</span></button>
         <button type="button" data-tab="explorer" class="nav-item"><span class="nav-ico">▥</span><span>Passenger Explorer</span></button>
         <button type="button" data-tab="forecast" class="nav-item"><span class="nav-ico">⌁</span><span>Forecast Lab</span></button>
         <button type="button" data-tab="scenario" class="nav-item"><span class="nav-ico">◇</span><span>Scenario Studio</span></button>
@@ -35,7 +37,7 @@
         <div class="live-source"><span class="pulse-dot"></span><span>OFFICIAL HISTORICAL DATA</span></div>
         <div class="radar-art" aria-hidden="true"><span class="radar-ring ring-one"></span><span class="radar-ring ring-two"></span><span class="radar-ring ring-three"></span><span class="radar-line"></span><span class="radar-center"></span></div>
         <p class="side-caption">Built for aviation decision-makers.<br/>Driven by public data.</p>
-        <div class="side-foot">PORTFOLIO DEMONSTRATION <span>v2.0</span></div>
+        <div class="side-foot">PORTFOLIO DEMONSTRATION <span>v3.0</span></div>
       </div>
     </aside>
     <div class="main-shell">
