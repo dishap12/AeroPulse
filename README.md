@@ -2,13 +2,13 @@
 
 **[🌐 Open the AeroPulse live demo](https://dishap12.github.io/AeroPulse/)** · [View repository](https://github.com/dishap12/AeroPulse) · [Recruiter guide](RECRUITER_GUIDE.md)
 
-**A working, responsive aviation business intelligence portfolio application built with official Canadian airport passenger data.** Designed to demonstrate business analytics, KPI reporting, demand forecasting, data quality, and assumption-based planning relevant to airlines, airports, and aerospace manufacturers.
+**A working, responsive aviation analytics and aircraft exploration application built with public Canadian airport and manufacturer data.** Designed to demonstrate business analytics, KPI reporting, demand forecasting, data quality, and assumption-based planning relevant to airlines, airports, and aerospace manufacturers.
 
 > **Independent portfolio demonstration.** AeroPulse is not affiliated with Porter Airlines, Air Canada, Toronto Pearson, Ottawa Airport Authority, Airbus, Boeing, Bombardier or NAV CANADA. No confidential airport data are used. It is *not* a live flight tracker.
 
 ## Quick start
 
-**Option A: Just open `index.html`** in a modern browser. This is a dependency-free static application; the dataset and analytics load locally. Internet access is not required. No credentials, API keys, Node installation or paid services needed.
+**Option A: Just open `index.html`** in a modern browser. This is a dependency-free static application; the datasets, manufacturer specs and analytics load locally. Internet access is not required. No credentials, API keys, Node installation or paid services needed.
 
 **Option B: Run a local web server** (optional):
 
@@ -17,11 +17,29 @@ python3 -m http.server 8000
 # Open http://localhost:8000 in your browser
 ```
 
+## What is new in AeroPulse 3.0
+
+**[Open the live application](https://dishap12.github.io/AeroPulse/#atlas)** and choose **Aviation Explorer** in the left navigation. It now includes a calmer Command Centre and a new aircraft/airport exploration workspace.
+
+| Interaction | Try it |
+| --- | --- |
+| **Map exploration** | Click an airport pin to change your destination. |
+| **Origin and destination** | Use airport dropdowns to compare 12 Canadian locations. |
+| **Aircraft comparison** | Select Embraer E195-E2, Dash 8-400, Airbus A220-300, Boeing 737-8 MAX, or Bombardier Global 7500. |
+| **Route calculation** | See great-circle distance, % of a manufacturer-published maximum range, and indicative passenger count. |
+| **Seat-load assumption** | Drag the load slider to recalculate hypothetical occupancy. |
+| **Source transparency** | Open the methodology disclosure and each aircraft's official specification link. |
+
+**Important scope:** The interactive map is a *schematic geographic coordinate plot*, not an aircraft tracking service or live airline route network. Route lines are created from user-selected airport pairs and do not assert that a scheduled service exists. Manufacturer ranges are nominal maxima, not dispatch/operational feasibility checks. Airport coordinate records are approximate and sourced from [OurAirports](https://ourairports.com/data/) (public domain); five aircraft profiles reference [Porter](https://www.flyporter.com/en-ca/about-porter/our-fleet), [Air Canada](https://www.aircanada.com/ca/en/aco/home/fly/onboard/fleet.html), and original aircraft manufacturer technical pages. Airport passenger statistics remain a fixed, dated official-source snapshot rather than an automatically refreshed feed.
+
+**Quick demo:** Start at YOW → YYZ with the Embraer E195-E2. Select YVR as the destination, switch aircraft to Dash 8-400, and observe how the route-to-range comparison changes. Then open Forecast Lab and Scenario Studio to explore passenger-demand planning separately.
+
 ## What works
 
 | Screen | Interactive features | Output |
 | --- | --- | --- |
-| **Command Centre** | YOW metrics, genuine historical monthly trend and segment donut | Recorded demand and key findings |
+| **Command Centre** | Focused YOW and YYZ metrics, monthly trend, and clear exploration links | Recorded demand and next actions |
+| **Aviation Explorer (v3)** | Click Canadian airport pins, choose origin/destination, switch aircraft, adjust seat load and filter fleet | Haversine distance, nominal range comparison and hypothetical passenger capacity |
 | **Passenger Explorer** | Choose reporting year, view monthly trends and seasonality heatmap, compare YOW and YYZ | Official sector analysis and CSV download |
 | **Forecast Lab** | Choose 3/6/12 months, change growth adjustment (-15 to +15 percentage points) | Explainable model forecast, backtest WAPE and CSV download |
 | **Scenario Studio** | Select YOW/YYZ, modify assumptions, save up to four browser-local comparisons, export scenario results | Hypothetical flight equivalents, gate utilization and comparative business case |
