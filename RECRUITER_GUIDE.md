@@ -1,3 +1,18 @@
+## New in version 3 — a memorable 90-second walkthrough
+
+1. Open the **Command Centre**. Explain YOW 2025 passenger growth and why reporting periods must be comparable.
+2. Select **Aviation Explorer** and click **Vancouver (YVR)** on the map while Ottawa is the origin.
+3. Compare the Embraer E195-E2 and the Dash 8-400. Notice how the route distance relates to each aircraft's **published maximum range**. Mention that aircraft performance and actual route operation cannot be inferred from range alone.
+4. Change the passenger-load slider to demonstrate how the application recalculates hypothetical occupancy.
+5. Finish in **Forecast Lab** or **Scenario Studio** to show the business analytics connection.
+
+**Interview framing:** "I wanted to make aviation data easier to explore, not just prettier to display. I built a dashboard to interpret public airport passenger trends, and extended it with a geographic aircraft comparison tool. The user can make choices and see real calculations update. I validated the data and documented the difference between reported facts and hypothetical planning assumptions."
+
+**Honesty:** The map does not contain actual scheduled routes or live flights; it plots selected locations and theoretical direct distances. Aircraft range data comes from manufacturer/airline publications. This is a portfolio prototype, not an aircraft dispatch or airport capacity management product.
+
+
+---
+
 # AeroPulse — Recruiter Presentation Guide
 
 ## 20-second elevator pitch
