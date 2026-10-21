@@ -109,24 +109,6 @@ node --test tests/*.test.cjs        # tests model invariants, calculations and p
 
 `data/aeropulse.sqlite` is intentionally excluded from version control since it is generated. No Python third-party packages required.
 
-## Deploy for free using GitHub Pages
-
-1. Create a **public repository named `AeroPulse`** on your GitHub account.
-2. Upload the *contents of this folder* (`index.html`, `app.js`, `analytics.js`, `styles.css`, `data/`, `assets/`, `tests/`, etc.). **Do not upload only the ZIP file.**
-3. In GitHub: **Settings → Pages → Build and deployment**. Select **Deploy from a branch**; choose **main** and **/(root)**. Save.
-4. AeroPulse is deployed to **[GitHub Pages](https://dishap12.github.io/AeroPulse/)**. The GitHub Pages deployment workflow completed successfully on October 20, 2026. Independently check the live site in your browser after future deployments.
-5. Add the live URL to the GitHub repo's **About → Website** field, and link GitHub + live demo from your resume/LinkedIn.
-
-Alternatively, drag the unzipped project folder to [Netlify Drop](https://app.netlify.com/drop); its static HTML works there too.
-
-## What to say in a recruiter interview
-
-> **Problem:** Airport and passenger demand data are published in separate public sources. Teams need accessible, attributable trend analysis and ways to test operational assumptions.
->
-> **My solution:** I built AeroPulse to reconcile and visualize official YOW passenger data, compare high-level YOW/YYZ traffic, evaluate seasonal patterns, create transparent monthly forecasts, and run assumption-based capacity scenarios. The application includes source attribution and tests, and distinguishes observed figures from hypothetical outputs.
->
-> **Trade-offs:** I used a simple interpretable model rather than opaque AI because the public dataset is limited. I did not invent confidential flight-operation data. A production version would require real schedules, gate occupancy, aircraft configuration and additional forecast validation.
-
 ## Skills demonstrated
 
 KPI definition · business process analysis · data storytelling · SQL analytics · Python data validation · planning simulations · dashboard UX · forecasting / backtesting · quality controls · technical documentation · reproducibility.
